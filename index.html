@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rohit Ganeshe — Data Scientist | AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Rohit Ganeshe – Data Scientist & AI/ML Engineer">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
+
+<!-- ===== NAV ===== -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <!-- LOGO: Jai SiyaRam -->
+    <a href="#home" class="logo" id="navHome">
+      <span class="logo-jai">🚩 Jai SiyaRam 🙏  RSG.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeBtn" class="icon-btn" aria-label="toggle theme">◑</button>
+      <a href="resume.pdf" download class="nav-hire">Download CV</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <div class="hero-wrap">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+
+      <!-- TIME-BASED GREETING -->
+      <div class="hero-greeting fade-up" style="--d:0s">
+        <span id="timeGreeting"></span>
+        <span class="greeting-wave">👋</span>
+      </div>
+
+      <div class="hero-pill fade-up" style="--d:.08s">
+        <span class="pill-dot"></span>
+        <span>Available for full-time roles</span>
+      </div>
+
+      <h1 class="hero-h1 fade-up" style="--d:.15s">
+        I'm <span class="h1-name">Rohit</span>
+        <span class="h1-last">Ganeshe</span>
+      </h1>
+
+      <div class="hero-type fade-up" style="--d:.25s">
+        <span class="type-bracket">&lt;</span>
+        <span id="tw"></span>
+        <span class="type-cur">_</span>
+        <span class="type-bracket">/&gt;</span>
+      </div>
+
+      <p class="hero-bio fade-up" style="--d:.35s">
+        AI / ML Engineer building <mark>intelligent systems</mark> — from NLP pipelines and
+        Generative AI to cloud-deployed ML apps. MCA graduate with real work experience at
+        <strong>Innomatics Research Lab</strong> &amp; <strong>VidyaGXP</strong>.
+      </p>
+
+      <div class="hero-btns fade-up" style="--d:.42s">
+        <a href="#projects" class="btn-primary">View Projects ↗</a>
+        <a href="#contact" class="btn-secondary">Hire Me</a>
+      </div>
+
+      <div class="hero-socials fade-up" style="--d:.5s">
+        <a href="https://github.com/ROHITGANESHE" target="_blank" class="soc-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/rohit-ganeshe-8a7041237/" target="_blank" class="soc-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:rohitganeshe2001@gmail.com" class="soc-btn">✉ Email</a>
+        <a href="https://medium.com/@rohitganeshe2001" target="_blank" class="soc-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          Medium
+        </a>
+      </div>
+
+      <div class="hero-stats fade-up" style="--d:.58s">
+        <div class="hstat"><span class="hstat-n">11+</span><span class="hstat-l">Projects</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hstat-n">2</span><span class="hstat-l">Companies</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hstat-n">MCA</span><span class="hstat-l">Graduate</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hstat-n">🥇</span><span class="hstat-l">Gold Medal</span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT PHOTO -->
+    <div class="hero-right fade-up" style="--d:.2s">
+      <div class="photo-frame">
+        <div class="photo-ring-outer"></div>
+        <div class="photo-ring-inner"></div>
+        <div class="photo-circle">
+          <img src="rohit.png" alt="Rohit Ganeshe" class="hero-photo">
+        </div>
+        <div class="photo-badge">
+          <span class="badge-dot-g"></span>Open to Work
+        </div>
+        <div class="float-chip chip-1">Python 🐍</div>
+        <div class="float-chip chip-2">ML 🤖</div>
+        <div class="float-chip chip-3">GenAI ✦</div>
+        <div class="float-chip chip-4">AWS ☁</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="hero-scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="sec-wrap">
+    <div class="sec-tag reveal">About</div>
+    <h2 class="sec-title reveal">Turning raw data into<br><em>real decisions</em></h2>
+    <div class="about-grid">
+      <div class="about-txt reveal">
+        <p>I'm an AI/ML Engineer with hands-on experience building machine learning models, data pipelines, and GenAI solutions using Python and SQL. Skilled in EDA, feature engineering, model training, and visualization — with practical exposure to end-to-end ML workflows and cloud deployment.</p>
+        <p>I bring a blend of academic depth (MCA, SAGE University, Indore) and real work experience at <strong>Innomatics Research Lab</strong> and <strong>VidyaGXP Pvt. Ltd.</strong></p>
+        <blockquote>"Learning deeply. Building practically. Deploying confidently."</blockquote>
+        <div class="about-tags">
+          <span>🏅 B.Sc. Gold Medalist</span>
+          <span>📍 Pune,India</span>
+          <span>🌐 English · Hindi · Marathi</span>
+          <span>📞 +91 9109081648</span>
+        </div>
+      </div>
+      <div class="about-cards reveal">
+        <div class="info-card">
+          <span class="ic-icon">🎓</span>
+          <div><span class="ic-label">Education</span><span class="ic-val">MCA — SAGE University, Indore</span></div>
+        </div>
+        <div class="info-card">
+          <span class="ic-icon">💼</span>
+          <div><span class="ic-label">Current</span><span class="ic-val">Data Science Intern @ Innomatics</span></div>
+        </div>
+        <div class="info-card">
+          <span class="ic-icon">🏙️</span>
+          <div><span class="ic-label">Location</span><span class="ic-val">Pune, India</span></div>
+        </div>
+        <div class="info-card">
+          <span class="ic-icon">✉️</span>
+          <div><span class="ic-label">Email</span><span class="ic-val">rohitganeshe2001@gmail.com</span></div>
+        </div>
+        <div class="info-card">
+          <span class="ic-icon">📞</span>
+          <div><span class="ic-label">Phone</span><span class="ic-val">+91 9109081648</span></div>
+        </div>
+        <div class="info-card">
+          <span class="ic-icon">🔬</span>
+          <div><span class="ic-label">Domain</span><span class="ic-val">Data Analyst · ML · NLP · GenAI</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section section-dark">
+  <div class="sec-wrap">
+    <div class="sec-tag reveal">Experience</div>
+    <h2 class="sec-title reveal">Where I've <em>worked</em></h2>
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <div class="exp-logo">📊</div>
+          <div class="exp-badge current">Current</div>
+        </div>
+        <div class="exp-date">Apr 2025 – Present</div>
+        <h3>Data Science Intern</h3>
+        <p class="exp-company">Innomatics Research Lab, Pune</p>
+        <ul class="exp-points">
+          <li>Performed EDA and feature engineering for real-world ML use cases</li>
+          <li>Data analysis &amp; visualisation using Python, SQL, and Power BI</li>
+          <li>Created interactive dashboards enhancing business decision-making</li>
+        </ul>
+        <div class="exp-tags"><span>Python</span><span>SQL</span><span>Power BI</span><span>EDA</span><span>ML</span></div>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-top"><div class="exp-logo">⚙️</div></div>
+        <div class="exp-date">Oct 2024 – Jan 2025</div>
+        <h3>Python Developer (Django)</h3>
+        <p class="exp-company">VidyaGxP Pvt. Ltd., Indore</p>
+        <ul class="exp-points">
+          <li>Managed and queried MySQL databases for data handling &amp; reporting</li>
+          <li>Developed data workflows using Django ORM for efficient retrieval</li>
+          <li>Supported deployment and API integration for backend services</li>
+        </ul>
+        <div class="exp-tags"><span>Django</span><span>MySQL</span><span>Python</span><span>REST API</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section">
+  <div class="sec-wrap">
+    <div class="sec-tag reveal">Education</div>
+    <h2 class="sec-title reveal">Academic <em>background</em></h2>
+    <div class="edu-row">
+      <div class="edu-card reveal">
+        <div class="edu-yr">Oct 2021 – Jun 2023</div>
+        <div class="edu-degree">Master of Computer Application (MCA)</div>
+        <div class="edu-uni">SAGE University, Indore</div>
+        <p class="edu-desc">Postgraduate program in computer applications, software engineering, data systems, and AI.</p>
+        <div class="edu-icon-big">🎓</div>
+      </div>
+      <div class="edu-card gold reveal">
+        <div class="edu-yr">Jul 2018 – Jul 2021</div>
+        <div class="edu-degree">B.Sc. in Computer Science</div>
+        <div class="edu-uni">DAVV University, Indore</div>
+        <p class="edu-desc">Graduated with First Rank — awarded the college Gold Medal for academic excellence.</p>
+        <div class="edu-gold-badge">🥇 Gold Medalist — First Rank</div>
+        <div class="edu-icon-big">🏅</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section section-dark">
+  <div class="sec-wrap">
+    <div class="sec-tag reveal">Skills</div>
+    <h2 class="sec-title reveal">Technical <em>expertise</em></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-ico">{ }</span><h3>Programming</h3><span class="sk-pct">90%</span></div>
+        <div class="sk-sub">Python · SQL · MySQL</div>
+        <div class="sk-track"><div class="sk-fill" style="--w:90%"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-ico">⊗</span><h3>Machine Learning</h3><span class="sk-pct">85%</span></div>
+        <div class="sk-sub">Scikit-learn · Regression · Classification · Random Forest</div>
+        <div class="sk-track"><div class="sk-fill" style="--w:85%"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-ico">🧠</span><h3>Deep Learning &amp; NLP</h3><span class="sk-pct">78%</span></div>
+        <div class="sk-sub">PyTorch · TF-IDF · Sentiment Analysis · Text Processing</div>
+        <div class="sk-track"><div class="sk-fill" style="--w:78%"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-ico">✦</span><h3>Generative AI</h3><span class="sk-pct">80%</span></div>
+        <div class="sk-sub">Gemini API · Prompt Engineering · LangChain · RAG · Streamlit</div>
+        <div class="sk-track"><div class="sk-fill" style="--w:80%"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-ico">∑</span><h3>Data Analysis</h3><span class="sk-pct">88%</span></div>
+        <div class="sk-sub">Pandas · NumPy · EDA · Feature Engineering · Excel</div>
+        <div class="sk-track"><div class="sk-fill" style="--w:88%"></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-head"><span class="sk-ico">◈</span><h3>Visualization &amp; BI</h3><span class="sk-pct">85%</span></div>
+        <div class="sk-sub">Matplotlib · Seaborn · Power BI · Dashboard Development</div>
+        <div class="sk-track"><div class="sk-fill" style="--w:85%"></div></div>
+      </div>
+    </div>
+    <div class="tech-cloud reveal">
+      <span>Python</span><span>SQL</span><span>Scikit-learn</span><span>PyTorch</span>
+      <span>Pandas</span><span>NumPy</span><span>TF-IDF</span><span>Gemini API</span>
+      <span>LangChain</span><span>RAG</span><span>Streamlit</span><span>Power BI</span>
+      <span>AWS EC2</span><span>Django</span><span>MySQL</span><span>BeautifulSoup</span>
+      <span>Seaborn</span><span>Matplotlib</span><span>MLOps</span><span>Flask</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section">
+  <div class="sec-wrap">
+    <div class="sec-tag reveal">Projects</div>
+    <h2 class="sec-title reveal">Things I've <em>built</em></h2>
+    <div class="proj-grid">
+      <div class="proj-card featured reveal">
+        <div class="proj-header">
+          <div class="proj-num">01</div>
+          <div class="proj-badges"><span class="pbadge purple">GenAI</span><span class="pbadge">Jan 2026</span></div>
+        </div>
+        <h3>TechGuide — Gemini AI Assistant</h3>
+        <p>Domain-focused AI assistant using Google Gemini API + Streamlit. Implemented Prompt Engineering, Contextual Memory for multi-turn conversations, and secure API management for reliable AI responses.</p>
+        <div class="proj-stack"><span>Gemini API</span><span>Python</span><span>Streamlit</span><span>Prompt Eng.</span></div>
+        <a href="https://github.com/ROHITGANESHE" target="_blank" class="proj-cta">View on GitHub ↗</a>
+      </div>
+      <div class="proj-card featured reveal">
+        <div class="proj-header">
+          <div class="proj-num">02</div>
+          <div class="proj-badges"><span class="pbadge green">ML + AWS</span><span class="pbadge">Feb 2026</span></div>
+        </div>
+        <h3>Flipkart Sentiment Analysis</h3>
+        <p>End-to-end NLP pipeline on 8,500+ e-commerce reviews. TF-IDF feature extraction, Scikit-learn classifiers, Streamlit app — deployed live on <strong>AWS EC2</strong>. Full production-level ML workflow.</p>
+        <div class="proj-stack"><span>NLP</span><span>TF-IDF</span><span>Scikit-learn</span><span>AWS EC2</span></div>
+        <a href="https://github.com/ROHITGANESHE" target="_blank" class="proj-cta">View on GitHub ↗</a>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-num">03</div>
+          <div class="proj-badges"><span class="pbadge">ML</span><span class="pbadge">Dec 2025</span></div>
+        </div>
+        <h3>Tour Package Purchase Prediction</h3>
+        <p>Classification pipeline predicting customer purchase behavior. Feature engineering, Logistic Regression &amp; Random Forest — best results with RF, improving marketing targeting strategy.</p>
+        <div class="proj-stack"><span>Random Forest</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span></div>
+        <a href="https://github.com/ROHITGANESHE" target="_blank" class="proj-cta">View on GitHub ↗</a>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-num">04</div>
+          <div class="proj-badges"><span class="pbadge">EDA</span><span class="pbadge">Nov 2025</span></div>
+        </div>
+        <h3>Indian Tour Packages Market Analysis</h3>
+        <p>Scraped 5,400+ listings via BeautifulSoup. Deep EDA uncovering pricing trends, destination popularity, and regional travel patterns using Seaborn dashboards.</p>
+        <div class="proj-stack"><span>BeautifulSoup</span><span>Pandas</span><span>Seaborn</span><span>EDA</span></div>
+        <a href="https://github.com/ROHITGANESHE" target="_blank" class="proj-cta">View on GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications" class="section section-dark">
+  <div class="sec-wrap">
+    <div class="sec-tag reveal">Certifications</div>
+    <h2 class="sec-title reveal">My <em>certifications</em></h2>
+    <p class="cert-sub reveal">Click any certificate to view it in full &nbsp;·&nbsp; 9 certificates</p>
+
+    <div class="cert-group-label reveal">🏢 Internship Certificates</div>
+    <div class="cert-gallery cert-gallery-3 reveal">
+      <div class="cg-card" onclick="openCert('cert_da_internship.jpg','Data Science with GenAI Internship','Innomatics Research Labs','24 Nov 2025 – 19 Jan 2026','Python · EDA · Flask · Problem Solving','G_11251136')">
+        <div class="cg-thumb"><img src="cert_da_internship.jpg" alt="DA Internship" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge intern">Internship</span><h4>Data Science with GenAI</h4><p>Innomatics Research Labs</p><span class="cg-date">24 Nov 2025 – 19 Jan 2026</span></div>
+      </div>
+      <div class="cg-card" onclick="openCert('cert_genai_internship.jpg','Advanced GenAI Internship','Innomatics Research Labs','20 Jan 2026 – 31 Mar 2026','MLOps · LangChain · RAG · LangGraph · AWS EC2 · Bedrock','G_01261135')">
+        <div class="cg-thumb"><img src="cert_genai_internship.jpg" alt="Advanced GenAI" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge intern">Internship</span><h4>Advanced GenAI Internship</h4><p>Innomatics Research Labs</p><span class="cg-date">20 Jan 2026 – 31 Mar 2026</span></div>
+      </div>
+      <div class="cg-card" onclick="openCert('cert_vidyagxp.jpg','Python Developer Internship','VidyaGxP Pvt. Ltd.','Oct 2024 – Jan 2025','Python · Django · MySQL · Debugging · API Integration','VidyaGxP-2025')">
+        <div class="cg-thumb"><img src="cert_vidyagxp.jpg" alt="VidyaGxP" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge intern">Internship</span><h4>Python Developer Internship</h4><p>VidyaGxP Pvt. Ltd.</p><span class="cg-date">Oct 2024 – Jan 2025</span></div>
+      </div>
+    </div>
+
+    <div class="cert-group-label reveal">📜 Course Certifications</div>
+    <div class="cert-gallery cert-gallery-3 reveal">
+      <div class="cg-card" onclick="openCert('cert_ds_genai.jpg','Certification in Data Science with GenAI','Innomatics Research Labs','Issued: 21 Feb 2026','Advanced Data Analysis · GenAI Applications · Python','CC_251067')">
+        <div class="cg-thumb"><img src="cert_ds_genai.jpg" alt="DS GenAI" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge course">Certification</span><h4>Data Science with GenAI</h4><p>Innomatics Research Labs</p><span class="cg-date">Issued: 21 Feb 2026</span></div>
+      </div>
+      <div class="cg-card" onclick="openCert('cert_python.png','Python Programming — Certificate of Excellence','Innomatics Research Labs','Issued: 21 Jun 2025','Python · OOP · Data Structures · Scripting','M_301625')">
+        <div class="cg-thumb"><img src="cert_python.png" alt="Python" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge course">Course</span><h4>Python Programming</h4><p>Innomatics Research Labs</p><span class="cg-date">Issued: 21 Jun 2025</span></div>
+      </div>
+      <div class="cg-card" onclick="openCert('cert_ml.png','Machine Learning — Certificate of Excellence','Innomatics Research Labs','Issued: 27 Dec 2025','Scikit-learn · Classification · Regression · Feature Engineering','M_302729')">
+        <div class="cg-thumb"><img src="cert_ml.png" alt="ML" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge course">Course</span><h4>Machine Learning</h4><p>Innomatics Research Labs</p><span class="cg-date">Issued: 27 Dec 2025</span></div>
+      </div>
+    </div>
+
+    <div class="cert-group-label reveal">🎖️ Additional Certificates</div>
+    <div class="cert-gallery cert-gallery-3 reveal">
+      <div class="cg-card" onclick="openCert('cert_mysql.png','Data Analysis with MySQL — Certificate of Excellence','Innomatics Research Labs','Issued: 28 Jul 2025','MySQL · SQL Queries · Joins · Aggregations','M_202079')">
+        <div class="cg-thumb"><img src="cert_mysql.png" alt="MySQL" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge course">Course</span><h4>Data Analysis with MySQL</h4><p>Innomatics Research Labs</p><span class="cg-date">Issued: 28 Jul 2025</span></div>
+      </div>
+      <div class="cg-card" onclick="openCert('cert_powerbi.png','Power BI — Certificate of Excellence','Innomatics Research Labs','Issued: 26 Sep 2025','Power BI · Dashboards · Data Visualization','M_201972')">
+        <div class="cg-thumb"><img src="cert_powerbi.png" alt="Power BI" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge course">Course</span><h4>Power BI</h4><p>Innomatics Research Labs</p><span class="cg-date">Issued: 26 Sep 2025</span></div>
+      </div>
+      <div class="cg-card" onclick="openCert('cert_outskill_genai.jpg','Generative AI Mastermind','Outskill','2025','Generative AI · LLMs · Prompt Engineering · AI Applications','-')">
+        <div class="cg-thumb"><img src="cert_outskill_genai.jpg" alt="Outskill" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge other">Other</span><h4>Generative AI Mastermind</h4><p>Outskill</p><span class="cg-date">2025</span></div>
+      </div>
+      <div class="cg-card" onclick="openCert('cert_react_scaler.png','React E-Commerce Masterclass','Scaler Masterclass','13 Feb 2024','React · E-Commerce · Frontend Development · JavaScript','-')">
+        <div class="cg-thumb"><img src="cert_react_scaler.png" alt="Scaler React" loading="lazy"><div class="cg-overlay"><span>View ↗</span></div></div>
+        <div class="cg-info"><span class="cg-badge other">Other</span><h4>React E-Commerce Masterclass</h4><p>Scaler Masterclass</p><span class="cg-date">13 Feb 2024</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERT MODAL -->
+<div class="cert-modal" id="certModal" onclick="closeCertOnBg(event)">
+  <div class="cert-modal-box">
+    <div class="cert-modal-header">
+      <div class="cert-modal-meta">
+        <h3 id="certModalTitle">Certificate</h3>
+        <p id="certModalIssuer"></p>
+      </div>
+      <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    </div>
+    <div class="cert-modal-img-wrap">
+      <img id="certModalImg" src="" alt="Certificate">
+    </div>
+    <div class="cert-modal-footer">
+      <div class="cert-modal-tags" id="certModalTags"></div>
+      <div class="cert-modal-right">
+        <span id="certModalDate" class="cert-modal-date"></span>
+        <span id="certModalId" class="cert-modal-id"></span>
+        <a id="certModalDownload" href="#" download class="cert-dl-btn">↓ Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="sec-wrap">
+    <div class="sec-tag reveal">Contact</div>
+    <h2 class="sec-title reveal">Let's <em>connect</em></h2>
+    <p class="contact-intro reveal">Open to full-time roles, internships, and collaborations in Data Science, AI, and ML. If you're building something meaningful — I'd love to be part of it.</p>
+
+    <div class="contact-grid">
+      <!-- LEFT: contact info -->
+      <div class="contact-left reveal">
+        <a href="mailto:rohitganeshe2001@gmail.com" class="clink">
+          <span class="cl-ico">✉</span>
+          <div><b>Email</b><span>rohitganeshe2001@gmail.com</span></div>
+        </a>
+        <a href="tel:+919109081648" class="clink">
+          <span class="cl-ico">📞</span>
+          <div><b>Phone</b><span>+91 9109081648</span></div>
+        </a>
+        <a href="https://www.linkedin.com/in/rohit-ganeshe-8a7041237/" target="_blank" class="clink">
+          <span class="cl-ico">in</span>
+          <div><b>LinkedIn</b><span>rohit-ganeshe-8a7041237</span></div>
+        </a>
+        <a href="https://github.com/ROHITGANESHE" target="_blank" class="clink">
+          <span class="cl-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </span>
+          <div><b>GitHub</b><span>ROHITGANESHE</span></div>
+        </a>
+        <a href="https://medium.com/@rohitganeshe2001" target="_blank" class="clink">
+          <span class="cl-ico">M</span>
+          <div><b>Medium</b><span>@rohitganeshe2001</span></div>
+        </a>
+      </div>
+
+      <!-- RIGHT: form -->
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mdarepzp" method="POST">
+        <div class="fg-row">
+          <div class="fg"><label>Your Name</label><input name="name" type="text" placeholder="John Doe" required></div>
+          <div class="fg"><label>Your Email</label><input name="email" type="email" placeholder="john@example.com" required></div>
+        </div>
+        <div class="fg"><label>Subject</label><input name="subject" type="text" placeholder="Job opportunity / Collaboration / Hello!"></div>
+        <div class="fg"><label>Message</label><textarea name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea></div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;gap:.6rem">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+        <p id="fstatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="foot-wrap">
+    <span class="foot-name">Rohit Ganeshe</span>
+    <span class="foot-copy">© 2026 Rohit Ganeshe · Data Scientist · AI/ML Engineer · Pune, India ·Om Namah Shivay </span>
+    <div class="foot-links">
+      <a href="https://github.com/ROHITGANESHE" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/rohit-ganeshe-8a7041237/" target="_blank">LinkedIn</a>
+      <a href="https://medium.com/@rohitganeshe2001" target="_blank">Medium</a>
+      <a href="mailto:rohitganeshe2001@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
